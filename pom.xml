@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.sbaudoin</groupId>
     <artifactId>sonar-yaml-plugin</artifactId>
-    <version>1.9.1</version>
+    <version>2024.8.8</version>
     <packaging>sonar-plugin</packaging>
 
     <name>YAML Analyzer</name>
-    <description>YAML 1.1 plugin for SonarQube</description>
+    <description>YAML 1.2 plugin for SonarQube</description>
     <url>https://github.com/sbaudoin/sonar-yaml</url>
     <inceptionYear>2018</inceptionYear>
 
@@ -65,7 +65,7 @@
             <name>Thomas de Grenier de Latour</name>
         </contributor>
         <contributor>
-            <name>Jeroen Borgers</name>
+            <name>Frank van Bokhoven</name>
         </contributor>
         <contributor>
             <name>Volker Milbrandt</name>

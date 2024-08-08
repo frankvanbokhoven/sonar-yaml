@@ -15,13 +15,14 @@
  */
 package com.github.sbaudoin.sonar.plugins.yaml;
 
+import org.sonar.api.Plugin;
+import org.sonar.api.utils.Version;
+
 import com.github.sbaudoin.sonar.plugins.yaml.languages.YamlLanguage;
 import com.github.sbaudoin.sonar.plugins.yaml.languages.YamlQualityProfile;
 import com.github.sbaudoin.sonar.plugins.yaml.rules.YamlRulesDefinition;
 import com.github.sbaudoin.sonar.plugins.yaml.rules.YamlSensor;
 import com.github.sbaudoin.sonar.plugins.yaml.settings.YamlSettings;
-import org.sonar.api.Plugin;
-import org.sonar.api.utils.Version;
 
 /**
  * Main plugin class
@@ -31,7 +32,7 @@ public class YamlPlugin implements Plugin {
 
     @Override
     public void define(Context context) {
-        boolean hasBuiltinYamlSupport = hasBuiltinYamlLanguageSupport(context);
+        boolean hasBuiltinYamlSupport = true;// hasBuiltinYamlLanguageSupport(context);
         if (!hasBuiltinYamlSupport) {
             context.addExtension(YamlLanguage.class);
         }

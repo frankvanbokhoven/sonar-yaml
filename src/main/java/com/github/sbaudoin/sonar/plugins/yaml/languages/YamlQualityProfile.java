@@ -15,8 +15,9 @@
  */
 package com.github.sbaudoin.sonar.plugins.yaml.languages;
 
-import com.github.sbaudoin.sonar.plugins.yaml.checks.CheckRepository;
 import org.sonar.api.server.profile.BuiltInQualityProfilesDefinition;
+
+import com.github.sbaudoin.sonar.plugins.yaml.checks.CheckRepository;
 
 /**
  * Default, built-in quality profile for the projects having YAML files
@@ -31,7 +32,7 @@ public class YamlQualityProfile implements BuiltInQualityProfilesDefinition {
      *        for the YAML language
      */
     public YamlQualityProfile(boolean hasBuiltinYamlSupport) {
-        this.hasBuiltinYamlSupport = hasBuiltinYamlSupport;
+        this.hasBuiltinYamlSupport = true;// hasBuiltinYamlSupport;
     }
 
     @Override

@@ -15,12 +15,12 @@
  */
 package com.github.sbaudoin.sonar.plugins.yaml.settings;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.sonar.api.PropertyType;
 import org.sonar.api.config.PropertyDefinition;
 import org.sonar.api.resources.Qualifiers;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Wrapper class for the class settings
@@ -63,7 +63,7 @@ public class YamlSettings {
      */
     public static List<PropertyDefinition> getProperties(boolean hasBuiltinYamlSupport) {
         List<PropertyDefinition> properties = new ArrayList<>();
-        if(!hasBuiltinYamlSupport) {
+     //   if(!hasBuiltinYamlSupport) {
             properties.add(
                 PropertyDefinition.builder(FILE_SUFFIXES_KEY)
                     .name("File Suffixes")
@@ -73,7 +73,7 @@ public class YamlSettings {
                     .category("YAML")
                     .onQualifiers(Qualifiers.PROJECT)
                     .build());
-        }
+      //  }
 
         properties.add(
             PropertyDefinition.builder(FILTER_UTF8_LB_KEY)
